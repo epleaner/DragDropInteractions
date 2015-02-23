@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Drag and Drop Interaction Ideas | Sidebar</title>
+		<title>Drag and Drop Interaction Ideas | Bottom Area</title>
 		<meta name="description" content="Inspiration for drag and drop interactions for the modern UI" />
 		<meta name="keywords" content="drag and drop, interaction, inspiration, web design, ui" />
 		<meta name="author" content="Codrops" />
@@ -12,10 +12,10 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/bottom-area.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body class="skin-1">
+	<body>
 		<div class="container">
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
@@ -26,8 +26,8 @@
 				<header class="codrops-header">
 					<h1>Drag and Drop Interaction Ideas <span>Inspiration for drag and drop interactions for the modern UI</span></h1>
 					<nav class="codrops-demos">
-						<a href="index.html">Bottom Area</a>
-						<a class="current-demo" href="sidebar.html">Sidebar</a>
+						<a class="current-demo" href="index.html">Bottom Area</a>
+						<a href="sidebar.html">Sidebar</a>
 						<a href="page-scale.html">Page Scale</a>
 						<a href="modal.html">Modal</a>
 						<a href="icons.html">Icons</a>
@@ -36,18 +36,18 @@
 					</nav>
 				</header>
 				<div id="grid" class="grid clearfix">
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-file-text-o"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
+					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
 				</div>
 				<!-- Related demos -->
 				<section class="related">
@@ -65,10 +65,6 @@
 		</div><!-- /container -->
 		<div id="drop-area" class="drop-area">
 			<div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
 				<div class="drop-area__item"><div class="dummy"></div></div>
 				<div class="drop-area__item"><div class="dummy"></div></div>
 				<div class="drop-area__item"><div class="dummy"></div></div>
@@ -102,10 +98,6 @@
 				// initialize draggable(s)
 				[].slice.call(document.querySelectorAll( '#grid .grid__item' )).forEach( function( el ) {
 					new Draggable( el, droppableArr, {
-						scroll : true,
-						scrollable : '#drop-area',
-						scrollSpeed : 40,
-						scrollSensitivity : 50,
 						draggabilly : { containment: document.body },
 						onStart : function() {
 							// add class 'drag-active' to body
